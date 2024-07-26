@@ -9,8 +9,8 @@ from src.file_worker_json import FileWorkerJson
 def main():
     """ Запуск программы """
 
-    user_input = input("Здравствуйте!\n"
-                       "Для запуска поиска вакансий нажмите Enter\n")
+    input("Здравствуйте!\n"
+          "Для запуска поиска вакансий нажмите Enter\n")
 
     # определить формат приемник
     type_container = interaction.choose_container()
