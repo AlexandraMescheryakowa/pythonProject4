@@ -18,4 +18,3 @@ class APIGetData(ABC):
     def structure_fields(self):
         """ Вернуть структуру соответствия полей источника с полями приемника"""
         pass
-

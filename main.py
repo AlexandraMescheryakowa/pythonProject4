@@ -1,7 +1,7 @@
 from settings import FILE_VACANCIES
 import src.interaction as interaction
 from src.api_hh import APIHeadHunter
-from src.utils import  get_data_from_website, save_to_container
+from src.utils import get_data_from_website, save_to_container
 from src.parser import parser_data_website
 from src.file_worker_json import FileWorkerJson
 
@@ -9,8 +9,8 @@ from src.file_worker_json import FileWorkerJson
 def main():
     """ Запуск программы """
 
-    user_input = input("Здравствуйте!\n"
-                       "Для запуска поиска вакансий нажмите Enter\n")
+    input("Здравствуйте!\n"
+          "Для запуска поиска вакансий нажмите Enter\n")
 
     # определить формат приемник
     type_container = interaction.choose_container()
