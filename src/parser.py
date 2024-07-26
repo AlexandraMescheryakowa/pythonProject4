@@ -1,19 +1,18 @@
 from src.vacancy import Vacancy
 
 
-def parser_data_website(vacancies_from_site:dict, structure_fields) -> list:
+def parser_data_website(vacancies_from_site: dict, structure_fields) -> list:
     """ Прочитать данные с сайта в приемник """
 
     vacancies = []
 
     # распарсим записи с сайта в формат приемника
     for vacancy_from_site in vacancies_from_site:
-
         # запишем в словарь по ключам класса Vacancy на основе соответствии, определенной в структуре класса api
         dict_vacancies = get_dict_value(vacancy_from_site, structure_fields)
 
         # возвращаем отсортированный список экземпляров класса Vacancy
-        #for vacancy in dict_vacancies:
+        # for vacancy in dict_vacancies:
         vacancies.append(Vacancy.new_vacancy(dict_vacancies))
 
         # отсортируем вакансии по зарплате от

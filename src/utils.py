@@ -16,7 +16,7 @@ def get_data_from_receiver() -> dict:
         raise f'К сожалению для типа приемника {TYPE_CONTAINER} код еше не написан'
 
 
-def save_to_container(data:dict):
+def save_to_container(data: dict):
     """ Записать данные из словаря в приемник
     :param data: dict
     :return: None
@@ -58,8 +58,3 @@ def get_vacancies_by_validity_area():
             result.append(vacancy)
 
     return result
-
-
-
-
-

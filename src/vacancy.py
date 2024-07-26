@@ -54,24 +54,24 @@ class Vacancy:
 
         try:
             return cls(vacancy_data['name'],
-                        vacancy_data['area_name'],
-                        vacancy_data['vacancies_url'],
-                        vacancy_data['salary_currency'],
-                        vacancy_data['salary_from'],
-                        vacancy_data['salary_to'],
-                        vacancy_data['requirement'],
-                        vacancy_data['responsibility'],
-                        vacancy_data['employment'],
-                        vacancy_data['schedule'],
-                        vacancy_data['experience']
-            )
+                       vacancy_data['area_name'],
+                       vacancy_data['vacancies_url'],
+                       vacancy_data['salary_currency'],
+                       vacancy_data['salary_from'],
+                       vacancy_data['salary_to'],
+                       vacancy_data['requirement'],
+                       vacancy_data['responsibility'],
+                       vacancy_data['employment'],
+                       vacancy_data['schedule'],
+                       vacancy_data['experience']
+                       )
 
         except KeyError as err:
             raise f"Ошибка чтения данных: {err}"
 
     def __lt__(self, other):
         """ Сравнить вакансий по зарплате"""
-        if isinstance(other,self.__class__):
+        if isinstance(other, self.__class__):
             return self.salary_from_rub < other.salary_from_rub
         raise 'Сравнение возможно только для экземпляров класса Vacancy'
 

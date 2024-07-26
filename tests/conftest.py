@@ -33,16 +33,16 @@ def json_file():
 def structure_fields():
     """Фикстура для структуры соответствия ключей словаря из json и класса"""
     return {'name': 'name',
-            'area_name':'area/name',
-            'vacancies_url':'url',
-            'salary_currency':'salary/currency',
-            'salary_from':'salary/from',
-            'salary_to':'salary/to',
-            'requirement':'snippet/requirement',
-            'responsibility':'snippet/responsibility',
-            'employment':'employment/name',
-            'experience':'experience/name',
-            'schedule':'schedule/name'
+            'area_name': 'area/name',
+            'vacancies_url': 'url',
+            'salary_currency': 'salary/currency',
+            'salary_from': 'salary/from',
+            'salary_to': 'salary/to',
+            'requirement': 'snippet/requirement',
+            'responsibility': 'snippet/responsibility',
+            'employment': 'employment/name',
+            'experience': 'experience/name',
+            'schedule': 'schedule/name'
             }
 
 

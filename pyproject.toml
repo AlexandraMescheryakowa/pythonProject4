@@ -9,7 +9,7 @@ readme = "README.md"
 python = "^3.12"
 requests = "^2.32.3"
 
-
+git rm --cached .idea/ -r
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
